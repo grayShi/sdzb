@@ -1,0 +1,27 @@
+body,html {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+a:link {color: black}
+a:visited {color: black}
+a:hover {color: red}
+a:active {color: black}
+
+.page-template {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.head-span {
+  white-space: nowrap;
+}
+
+.remind-message div {
+  margin-left: 20px !important;
+}
+
+.rcv-mark div {
+  color: red
+}
