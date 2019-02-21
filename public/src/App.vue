@@ -1,5 +1,5 @@
 <template>
-  <div class="page-template" v-if="$route.meta ? $route.meta.isNotShowMenu: false">
+  <div class="page-template" v-if="$route.meta ? $route.meta.notShowMenu: false">
     <router-view/>
   </div>
   <div class="page-template"  v-else>
@@ -19,3 +19,6 @@ export default {
   }
 };
 </script>
+<style lang="scss">
+  @import "scss/common";
+</style>

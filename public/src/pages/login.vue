@@ -1,28 +1,42 @@
 <template>
-  <div class="login-body">
-    <div class="login-box">
-      <div class="login-div">
-        <div><h3>淄博质检所LIMS系统</h3></div>
-        <el-form ref="form" :model="form" :rules="loginRules" label-width="80px">
-          <el-form-item label="账号" prop="username">
-            <el-input v-model="form.username"></el-input>
-          </el-form-item>
-          <el-form-item label="密码" prop="password">
-            <el-input v-model="form.password"></el-input>
-          </el-form-item>
-        </el-form>
-        <div class="login-forget">
-          <span><a :href="goToLink('register')">立即注册</a></span>
-          <span><a :href="goToLink('forget')">忘记密码</a></span>
+  <div class="login-body login-body-img">
+    <div class="login-box login-box-img">
+      <div class="login-box-body">
+        <div class="login-box-title">
+          <img :src="`/static/img/logo.png`"/>
         </div>
-        <el-button type="primary" size="small" @click="login">登陆</el-button>
+        <div class="login-box-form">
+          <h3>登录</h3>
+          <h3>L O G I N</h3>
+          <div class="login-box-form-input">
+            <el-input :placeholder="$placeholder.input" v-model="form.username">
+              <template slot="prepend">
+                <img :src="`/static/img/login/登录用户名.png`"/>
+              </template>
+            </el-input>
+            <el-input :placeholder="$placeholder.input" v-model="form.password">
+              <template slot="prepend">
+                <img :src="`/static/img/login/登录密码.png`"/>
+              </template>
+            </el-input>
+          </div>
+          <div class="login-box-form-href">
+            <span><a :href="goToLink('register')">立即注册</a></span>
+            <span><a :href="goToLink('forget')">忘记密码</a></span>
+          </div>
+          <div class="login-box-footer">
+            <el-button type="primary" @click="login">登录系统</el-button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import '../css/loginCSS.css';
+import axios from 'axios';
+// const loginForm = (form) => axios.post()
+
 export default {
   name: 'login',
   data () {
@@ -30,22 +44,14 @@ export default {
       form: {
         username: '',
         password: ''
-      },
-      loginRules: {
-        username: [
-          this.requiredInput('用户名')
-        ],
-        password: [
-          this.requiredInput('密码')
-        ]
       }
     };
   },
   methods: {
     login () {
-      // this.$refs.form.validate(valid => {
-      //
-      // });
+      if (this.form.username && this.form.password) {
+
+      }
       this.$router.push('/index');
     },
     goToLink (action) {
@@ -55,6 +61,6 @@ export default {
 };
 </script>
 
-<style scoped>
-
+<style lang="scss">
+@import "../scss/login";
 </style>

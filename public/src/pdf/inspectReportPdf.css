@@ -1,0 +1,170 @@
+#printBodyPage {
+  width: 210mm;
+}
+
+.pdf-body {
+  /*display: flex;*/
+  /*justify-content: center;*/
+  /*align-items: center;*/
+  width: 210mm;
+  height: 298.5mm;
+  text-align: center;
+  /*border: 1px solid black;*/
+}
+
+.pdf-index {
+  padding: 20mm 30mm;
+  font-size: 6mm;
+}
+
+.pdf-second {
+  padding: 20mm 20mm;
+}
+
+.pdf-third {
+  padding: 10mm 10mm;
+}
+
+.pdf-header-img .el-col {
+  height: 50mm;
+}
+
+.pdf-title-h1 {
+  font-size: 28mm;
+  font-weight: 400;
+}
+
+.pdf-title-h2 {
+  font-size: 18mm;
+  font-weight: 400;
+}
+
+.pdf-title-h3 {
+  font-size: 8mm;
+  font-weight: 400;
+}
+
+.pdf-title-h4 {
+  font-size: 8mm;
+}
+
+.pdf-title-h5 {
+  font-size: 5mm;
+  font-weight: 400;
+}
+
+.pdf-title-h6 {
+  font-size: 4mm;
+  font-weight: 400;
+}
+
+
+.line-margin {
+  margin-top: 5mm;
+}
+
+.line-max-margin {
+  margin-top: 10mm;
+}
+
+.line-mim-margin {
+  margin-top: 0;
+}
+
+.pdf-form .el-col {
+  height: 15mm;
+}
+
+.pdf-form-label-english {
+  font-size: 4mm;
+}
+
+.pdf-form-input {
+  line-height: 15mm;
+  border-bottom: 1px black solid;
+}
+
+.pdf-body-font {
+  text-align: left;
+  font-size: 4mm;
+  font-weight: 500;
+}
+
+.pdf-footer {
+  position: absolute !important;
+  bottom: 15mm;
+}
+
+.pdf-footer-font {
+  text-align: left;
+  font-size: 4mm;
+}
+
+.pdf-head-mission-no {
+  font-weight: 400;
+  position: absolute;
+  top: 10mm;
+  right: 10mm;
+}
+
+#printBodyPage table {
+  border: black 1px solid;
+  width: 100%;
+  padding: 0;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+#printBodyPage table tr td {
+  border: black 1px solid;
+  height: 14mm;
+  line-height: 4mm;
+  font-size: 4mm;
+  margin-right: 1px;
+}
+
+#printBodyPage table tr th {
+  border: black 1px solid;
+  height: 8mm;
+  line-height: 4mm;
+  font-size: 4mm;
+  margin-right: 1px;
+}
+
+.table-label {
+  width: 20%;
+}
+
+.table-label div:first-child {
+  margin-bottom: 1mm;
+}
+
+.table-input {
+  width: 30%;
+}
+
+.table-message-input {
+  text-align: left;
+}
+
+.table-input div {
+  display: inline;
+  word-break: break-word;
+}
+
+.report-mark {
+  display: block !important;
+  text-align: right;
+}
+
+.span-columns td {
+  height: 18mm;
+}
+
+.pdf-sign-label {
+  text-align: right;
+}
+
+.pdf-sign {
+  font-size: 8mm;
+}

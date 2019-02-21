@@ -1,0 +1,134 @@
+@import "params";
+
+.deadline-row {
+  background-color: $deadline-row;
+}
+.ready-deadline-row {
+  background-color: $ready-deadline-row;
+}
+
+
+.table-deadline-row {
+  background-color: $table-deadline-row !important;
+}
+.table-ready-deadline-row {
+  background-color: $table-ready-deadline-row !important;
+}
+
+.el-table {
+  .return-row {
+    color: #0066FF;
+  }
+  .active-desc-head .sort-caret.descending{
+    border-top-color: #409eff;
+  }
+  .active-asc-head .sort-caret.ascending{
+    border-bottom-color: #409eff;
+  }
+}
+
+.table-top-bar {
+  border: 1px solid #ebeef5;
+  min-height: $table-top-bar-height;
+  background-color: #ffffff;
+  color: #7b7b7b;
+  .table-icon-config {
+    line-height: $table-top-bar-height;
+    float: left;
+    display: flex;
+    align-items: center;
+    div {
+      margin: 0 5px;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+    }
+    span {
+      margin-right: 10px;
+    }
+  }
+  .table-top-button {
+    height: $table-top-bar-height;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    .el-button:last-child {
+      margin-right: 10px;
+    }
+  }
+}
+
+.table-search {
+  &,.table-not-head{
+    min-height: 0;
+  }
+  min-height: $table-top-bar-height;
+  display: flex;
+  align-items: center;
+  .other-condition {
+    width: 100%;
+  }
+  .search-condition {
+    width: 80%;
+    color: #899dab;
+    margin: 5px 0;
+    &-width {
+      width: 100%;
+    }
+    .el-input, .el-select {
+      max-width: 480px;
+    }
+  }
+  .add-button {
+    width: 20%;
+    text-align: right;
+  }
+}
+
+.el-table {
+  color: $table-font-color;
+  font-size: $table-font-size;
+  td, th {
+    padding: 8px;
+  }
+}
+.page-bar-body {
+  text-align: right;
+  background-color: #ffffff;
+  .el-pagination{
+    padding: 8px 10px;
+    .el-pagination__sizes {
+      font-size: 14px;
+    }
+
+    button {
+      background-color: $table-pagination-background;
+    }
+    .el-pager {
+      color: $table-pagination-color;
+      li {
+        background-color: $table-pagination-background !important;
+        &.active {
+          cursor: not-allowed;
+          background-color: $table-pagination-background-hover !important;
+        }
+        &:hover {
+          background-color: $table-pagination-background-hover !important;
+        }
+      }
+    }
+    .el-icon-arrow-left, .el-icon-arrow-right {
+      font-size: 20px;
+      color: $table-pagination-color !important;
+      font-weight: bolder;
+    }
+  }
+}
+.table-title-button .el-button {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
